@@ -27,6 +27,7 @@ import java.net.URL;
 import java.util.Scanner;
 
 import javax.annotation.Resource;
+import javax.inject.Inject;
 import javax.mail.MessagingException;
 
 import org.apache.james.managesieve.api.SieveParser;
@@ -246,6 +247,7 @@ public class ManageSieveMailet extends GenericMailet implements HelpProvider {
 
     /**
      */
+    @Inject
     @Resource(name = "sieverepository")
     public void setSieveRepository(SieveRepository repository) {
         _sieveRepository = repository;
@@ -255,6 +257,7 @@ public class ManageSieveMailet extends GenericMailet implements HelpProvider {
      * @param sieveParser
      *            the sieveParser to set
      */
+    @Inject
     @Resource(name = "sieveparser")
     public void setSieveParser(SieveParser sieveParser) {
         _sieveParser = sieveParser;
