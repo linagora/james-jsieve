@@ -62,7 +62,7 @@
       <item name="Release Notes" href="/release-notes.html" />
       <item name="JavaDocs" href="/apidocs/index.html" />
       <item name="Issue Tracker" href="https://issues.apache.org/jira/browse/JSIEVE" />
-      <item name="Specification" href="/index.html" collapse="true">
+      <item name="Specification" collapse="false">
         <item name="RFC 2234 ABNF" href="http://www.ietf.org/rfc/rfc2234.txt" />
         <item name="RFC 2244 ACAP" href="http://www.ietf.org/rfc/rfc2244.txt" />
         <item name="RFC 2298 MDN" href="http://www.ietf.org/rfc/rfc2298.txt" />
