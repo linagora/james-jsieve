@@ -204,7 +204,7 @@ public class Header extends AbstractTest {
         boolean isMatched = false;
         Iterator<String> headerValuesIter = headerValues.iterator();
         while (!isMatched && headerValuesIter.hasNext()) {
-            String headerValue = MimeUtil.sanitizeHeaderValue(headerValuesIter.next());
+            String headerValue = MimeUtil.unscrambleHeaderValue(headerValuesIter.next());
             isMatched = match(comparator, matchType, headerValue, keys, context);
         }
         return isMatched;
